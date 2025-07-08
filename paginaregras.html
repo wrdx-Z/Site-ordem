@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras | Ordem Paranormal RPG</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cyber-container">
+        <header class="cyber-header">
+            <div class="logo-hologram">
+                <h1 data-text="REGRAS_OFICIAIS">REGRAS_OFICIAIS</h1>
+                <div class="hologram-effect"></div>
+            </div>
+            
+            <nav class="cyber-nav">
+                <ul class="nav-grid">
+                    <li><a href="index.html"><i class="fas fa-home"></i> <span>TERMINAL</span></a></li>
+                    <li><a href="fichas.html"><i class="fas fa-id-card"></i> <span>FICHAS</span></a></li>
+                    <li><a href="dados.html"><i class="fas fa-dice-d20"></i> <span>DADOS</span></a></li>
+                    <li><a href="paginaregras.html" class="active"><i class="fas fa-book"></i> <span>REGRAS</span></a></li>
+                    <li><a href="contato.html"><i class="fas fa-terminal"></i> <span>CONTATO</span></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="cyber-main">
+            <section class="cyber-panel">
+                <h2 class="glitch" data-text="INTRODUCAO_AO_SISTEMA">INTRODUCAO_AO_SISTEMA</h2>
+                <div class="cyber-divider"></div>
+                
+                <div class="rule-section">
+                    <p>Ordem Paranormal é um RPG de investigação e terror sobrenatural onde os jogadores são agentes da Ordo Realitas, uma organização que combate o paranormal.</p>
+                    
+                    <h3><i class="fas fa-dice"></i> COMO JOGAR</h3>
+                    <p>O sistema usa um conjunto de dados D20 para testes. Quando um personagem tenta realizar uma ação arriscada:</p>
+                    <ol class="cyber-list">
+                        <li>O mestre determina a dificuldade (DV)</li>
+                        <li>O jogador rola 1d20</li>
+                        <li>Adiciona o modificador relevante</li>
+                        <li>Compara com a DV para determinar sucesso/falha</li>
+                    </ol>
+                </div>
+            </section>
+            
+            <section class="cyber-panel">
+                <h2 class="glitch" data-text="ATRIBUTOS_E_NEX">ATRIBUTOS_E_NEX</h2>
+                <div class="cyber-divider"></div>
+                
+                <div class="attributes-grid">
+                    <div class="attribute-card">
+                        <h3><i class="fas fa-fist-raised"></i> FORÇA (FOR)</h3>
+                        <p>Mede poder físico, capacidade de levantar peso e causar dano corpo-a-corpo.</p>
+                        <div class="attribute-examples">
+                            <span>Exemplos: Arremessar, agarrar, quebrar objetos</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attribute-card">
+                        <h3><i class="fas fa-running"></i> AGILIDADE (AGI)</h3>
+                        <p>Representa coordenação, reflexos e capacidade atlética.</p>
+                        <div class="attribute-examples">
+                            <span>Exemplos: Esquivar, acrobacias, armas de fogo</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attribute-card">
+                        <h3><i class="fas fa-brain"></i> INTELECTO (INT)</h3>
+                        <p>Indica conhecimento, raciocínio e capacidade de resolver problemas.</p>
+                        <div class="attribute-examples">
+                            <span>Exemplos: Investigar, perceber detalhes, rituais</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attribute-card">
+                        <h3><i class="fas fa-heartbeat"></i> VIGOR (VIG)</h3>
+                        <p>Representa resistência física e saúde.</p>
+                        <div class="attribute-examples">
+                            <span>Exemplos: Resistir a venenos, aguentar dor</span>
+                        </div>
+                    </div>
+                    
+                    <div class="attribute-card">
+                        <h3><i class="fas fa-theater-masks"></i> PRESENÇA (PRE)</h3>
+                        <p>Mede carisma, capacidade social e força de vontade.</p>
+                        <div class="attribute-examples">
+                            <span>Exemplos: Persuadir, intimidar, enganar</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rule-section">
+                    <h3><i class="fas fa-level-up-alt"></i> NEX (NÍVEL DE EXPOSIÇÃO PARANORMAL)</h3>
+                    <p>Indica o quanto seu personagem foi exposto ao paranormal, variando de 5% a 99%.</p>
+                    <ul class="cyber-list">
+                        <li><strong>5%-15%:</strong> Iniciante, apenas começando a ver o Outro Lado</li>
+                        <li><strong>20%-40%:</strong> Agente experiente, com algumas habilidades paranormais</li>
+                        <li><strong>45%-65%:</strong> Veterano, com considerável poder paranormal</li>
+                        <li><strong>70%-90%:</strong> Especialista, quase perdendo a sanidade</li>
+                        <li><strong>95%-99%:</strong> À beira da enlouquecer completamente</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="cyber-panel">
+                <h2 class="glitch" data-text="COMBATE_E_ACOES">COMBATE_E_ACOES</h2>
+                <div class="cyber-divider"></div>
+                
+                <div class="rule-section">
+                    <h3><i class="fas fa-swords"></i> RODADAS DE COMBATE</h3>
+                    <p>O combate é dividido em rodadas, cada uma representando cerca de 6 segundos:</p>
+                    <ol class="cyber-list">
+                        <li><strong>Iniciativa:</strong> Todos rolam 1d20 + AGI para determinar ordem</li>
+                        <li><strong>Turnos:</strong> Cada personagem age na ordem determinada</li>
+                        <li><strong>Ações:</strong> Em seu turno, cada um pode realizar:
+                            <ul>
+                                <li>1 ação padrão (atacar, conjurar ritual)</li>
+                                <li>1 ação de movimento</li>
+                                <li>Ações livres (falar, sacar item)</li>
+                            </ul>
+                        </li>
+                    </ol>
+                    
+                    <h3><i class="fas fa-bullseye"></i> TESTES DE ATAQUE</h3>
+                    <p>Para atacar:</p>
+                    <div class="code-block">
+                        <p>1d20 + modificador de atributo + proficiência (se treinado) ≥ DV do alvo</p>
+                    </div>
+                    <p>Armas corpo-a-corpo usam FOR, armas à distância usam AGI.</p>
+                    
+                    <h3><i class="fas fa-shield-alt"></i> DEFESA</h3>
+                    <p>Cada personagem tem Defesa calculada como:</p>
+                    <div class="code-block">
+                        <p>10 + AGI + outros modificadores (armadura, poderes)</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="cyber-panel">
+                <h2 class="glitch" data-text="RITUAIS_E_PODERES">RITUAIS_E_PODERES</h2>
+                <div class="cyber-divider"></div>
+                
+                <div class="rule-section">
+                    <h3><i class="fas fa-magic"></i> SISTEMA DE RITUAIS</h3>
+                    <p>Rituais são habilidades paranormais que usam PE (Pontos de Esforço):</p>
+                    <ul class="cyber-list">
+                        <li><strong>Custo:</strong> Cada ritual tem um custo em PE</li>
+                        <li><strong>Execução:</strong> Normalmente ação padrão</li>
+                        <li><strong>Teste:</strong> INT + Ocultismo (para conjurar)</li>
+                        <li><strong>Elementos:</strong> Conhecimento, Morte, Energia, Sangue, Medo</li>
+                    </ul>
+                    
+                    <div class="rituals-grid">
+                        <div class="ritual-card">
+                            <h4><i class="fas fa-eye"></i> TERCEIRO OLHO</h4>
+                            <p><strong>Custo:</strong> 1 PE</p>
+                            <p><strong>Elemento:</strong> Conhecimento</p>
+                            <p>Permite ver o paranormal por cenas.</p>
+                        </div>
+                        
+                        <div class="ritual-card">
+                            <h4><i class="fas fa-hand-sparkles"></i> EMBLEMA DO CALOR</h4>
+                            <p><strong>Custo:</strong> 2 PE</p>
+                            <p><strong>Elemento:</strong> Energia</p>
+                            <p>Cria uma explosão de fogo que causa 2d6 de dano.</p>
+                        </div>
+                    </div>
+                    
+                    <h3><i class="fas fa-fire-alt"></i> PODERES PARANORMAIS</h3>
+                    <p>Concedidos conforme NEX aumenta:</p>
+                    <div class="code-block">
+                        <p>5% - Poder inicial</p>
+                        <p>15% - +1 poder</p>
+                        <p>30% - +1 poder</p>
+                        <p>... continua até 99%</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="cyber-panel">
+                <h2 class="glitch" data-text="SANIDADE_E_MORTE">SANIDADE_E_MORTE</h2>
+                <div class="cyber-divider"></div>
+                
+                <div class="rule-section">
+                    <h3><i class="fas fa-brain"></i> SANIDADE (SAN)</h3>
+                    <p>Mede a saúde mental do personagem:</p>
+                    <ul class="cyber-list">
+                        <li>Valor inicial: 5 x PRE</li>
+                        <li>Perde SAN ao testemunhar eventos paranormais</li>
+                        <li>Chegando a 0, o personagem enlouquece</li>
+                    </ul>
+                    
+                    <h3><i class="fas fa-skull"></i> MORTE</h3>
+                    <p>Quando PV chegam a 0:</p>
+                    <ol class="cyber-list">
+                        <li>Personagem fica morrendo</li>
+                        <li>Teste de resistência (VIG) a cada rodada</li>
+                        <li>3 falhas = morte</li>
+                        <li>Rituais podem trazer de volta com consequências</li>
+                    </ol>
+                </div>
+            </section>
+        </main>
+
+        <footer class="cyber-footer">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>ORDEM REALITAS</h3>
+                    <p>Conteúdo não-oficial para o sistema Ordem Paranormal RPG.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>ACESSO RÁPIDO</h3>
+                    <ul>
+                        <li><a href="index.html">Terminal</a></li>
+                        <li><a href="personagens.html">Criar Fichas</a></li>
+                        <li><a href="dados.html">Rolagem de Dados</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>CONEXÕES</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2023 Sistema Ordem Paranormal | v2.3.5</p>
+                <div class="security-level">
+                    <span>NÍVEL DE SEGURANÇA: </span>
+                    <span class="level-high">ALTO</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="regras.js">
+      
+    </script>
+</body>
+</html>

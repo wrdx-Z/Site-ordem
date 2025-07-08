@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolagem de Dados | Ordem Paranormal RPG</title>
+    <link rel="stylesheet" href="STYLES.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cyber-container">
+        <header class="cyber-header">
+            <div class="logo-hologram">
+                <h1>ROLAGEM DE DADOS</h1>
+                <div class="hologram-effect"></div>
+            </div>
+            
+            <nav class="cyber-nav">
+                <ul class="nav-grid">
+                    <li><a href="index.html"><i class="fas fa-home"></i> <span>TERMINAL</span></a></li>
+                    <li><a href="fichas.html"><i class="fas fa-id-card"></i> <span>FICHAS</span></a></li>
+                    <li><a href="dados.html" class="active"><i class="fas fa-dice-d20"></i> <span>DADOS</span></a></li>
+                    <li><a href="paginaregras.html"><i class="fas fa-book"></i> <span>REGRAS</span></a></li>
+                    <li><a href="contato.html"><i class="fas fa-terminal"></i> <span>CONTATO</span></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="cyber-main">
+            <section class="dice-section">
+                <h2><i class="fas fa-dice"></i> ROLAGEM RÁPIDA</h2>
+                <div class="divider"></div>
+                
+                <div class="dice-grid">
+                    <button class="dice-btn" data-dice="d4">
+                        <i class="fas fa-dice-d4"></i> D4
+                    </button>
+                    <button class="dice-btn" data-dice="d6">
+                        <i class="fas fa-dice-d6"></i> D6
+                    </button>
+                    <button class="dice-btn" data-dice="d8">
+                        <i class="fas fa-dice-d8"></i> D8
+                    </button>
+                    <button class="dice-btn" data-dice="d10">
+                        <i class="fas fa-dice-d10"></i> D10
+                    </button>
+                    <button class="dice-btn" data-dice="d12">
+                        <i class="fas fa-dice-d12"></i> D12
+                    </button>
+                    <button class="dice-btn" data-dice="d20">
+                        <i class="fas fa-dice-d20"></i> D20
+                    </button>
+                    <button class="dice-btn" data-dice="d100">
+                        <i class="fas fa-percentage"></i> D100
+                    </button>
+                </div>
+            </section>
+
+            <section class="custom-roll-section">
+                <h2><i class="fas fa-calculator"></i> ROLAGEM PERSONALIZADA</h2>
+                <div class="divider"></div>
+                
+                <div class="custom-roll-form">
+                    <input type="text" id="custom-roll-input" placeholder="Ex: 2d6+1">
+                    <button id="roll-custom-btn" class="cyber-button">
+                        <i class="fas fa-play"></i> ROLAR
+                    </button>
+                </div>
+                
+                <div class="roll-examples">
+                    <p>Exemplos válidos:</p>
+                    <ul>
+                        <li><code>1d20+5</code> (1 dado de 20 + 5)</li>
+                        <li><code>2d6-1</code> (2 dados de 6 - 1)</li>
+                        <li><code>4d10+10</code> (4 dados de 10 + 10)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="results-section">
+                <h2><i class="fas fa-history"></i> RESULTADOS</h2>
+                <div class="divider"></div>
+                
+                <div class="current-result">
+                    <div class="dice-animation" id="dice-animation">
+                        <div class="dice-face">?</div>
+                    </div>
+                    <div class="result-text">
+                        <p>Último resultado:</p>
+                        <h3 id="current-roll-result">-</h3>
+                        <p id="current-roll-details">Nenhuma rolagem realizada</p>
+                    </div>
+                </div>
+                
+                <div class="history-container">
+                    <h3>Histórico</h3>
+                    <div class="history-list" id="history-list">
+                        <!-- Histórico será preenchido via JavaScript -->
+                        <div class="empty-history">
+                            <i class="fas fa-clock-rotate-left"></i>
+                            <p>Nenhuma rolagem registrada</p>
+                        </div>
+                    </div>
+                    <button id="clear-history" class="cyber-button small">
+                        <i class="fas fa-trash"></i> Limpar Histórico
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="cyber-footer">
+            <p>© 2023 Ordem Paranormal RPG | Sistema não-oficial</p>
+        </footer>
+    </div>
+
+    <!-- Sons opcionais (adicionar se quiser efeitos sonoros) -->
+    <audio id="dice-sound" src="assets/sounds/dice-roll.mp3" preload="auto"></audio>
+
+    <script src="dados.js"></script>
+</body>
+</html>

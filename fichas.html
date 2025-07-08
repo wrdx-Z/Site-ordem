@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fichas de Personagem | Ordem Paranormal RPG</title>
+    <!-- LINHA CORRIGIDA - caminho e nome do arquivo -->
+    <link rel="stylesheet" href="STYLE.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cyber-container">
+        <header class="cyber-header">
+            <div class="logo-hologram">
+                <h1>FICHAS DE PERSONAGEM</h1>
+                <div class="hologram-effect"></div>
+            </div>
+            
+            <nav class="cyber-nav">
+                <ul class="nav-grid">
+                    <li><a href="index.html"><i class="fas fa-home"></i> <span>TERMINAL</span></a></li>
+                    <li><a href="fichas.html" class="active"><i class="fas fa-id-card"></i> <span>FICHAS</span></a></li>
+                    <li><a href="dados.html"><i class="fas fa-dice-d20"></i> <span>DADOS</span></a></li>
+                    <li><a href="paginaregras.html"><i class="fas fa-book"></i> <span>REGRAS</span></a></li>
+                    <li><a href="contato.html"><i class="fas fa-terminal"></i> <span>CONTATO</span></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="cyber-main">
+            <section class="character-controls">
+                <button id="new-character" class="cyber-button">
+                    <i class="fas fa-plus"></i> NOVO PERSONAGEM
+                </button>
+                <div class="search-box">
+                    <input type="text" id="character-search" placeholder="Buscar personagem...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </section>
+
+            <section id="character-form" class="form-panel" style="display: none;">
+                <h2><i class="fas fa-user-edit"></i> EDITOR DE FICHA</h2>
+                <div class="divider"></div>
+                
+                <form id="character-sheet-form">
+                    <div class="form-section">
+                        <h3>INFORMAÇÕES BÁSICAS</h3>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="char-name">NOME DO PERSONAGEM</label>
+                                <input type="text" id="char-name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="char-class">CLASSE</label>
+                                <select id="char-class" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="Ocultista">Ocultista</option>
+                                    <option value="Especialista">Especialista</option>
+                                    <option value="Combatente">Combatente</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="char-nex">NEX (%)</label>
+                                <input type="number" id="char-nex" min="5" max="99" value="5" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>ATRIBUTOS</h3>
+                        <div class="attributes-grid">
+                            <div class="attribute-input">
+                                <label for="attr-for">FORÇA</label>
+                                <input type="number" id="attr-for" min="1" max="5" value="1" required>
+                            </div>
+                            
+                            <div class="attribute-input">
+                                <label for="attr-agi">AGILIDADE</label>
+                                <input type="number" id="attr-agi" min="1" max="5" value="1" required>
+                            </div>
+                            
+                            <div class="attribute-input">
+                                <label for="attr-int">INTELECTO</label>
+                                <input type="number" id="attr-int" min="1" max="5" value="1" required>
+                            </div>
+                            
+                            <div class="attribute-input">
+                                <label for="attr-vig">VIGOR</label>
+                                <input type="number" id="attr-vig" min="1" max="5" value="1" required>
+                            </div>
+                            
+                            <div class="attribute-input">
+                                <label for="attr-pre">PRESENÇA</label>
+                                <input type="number" id="attr-pre" min="1" max="5" value="1" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="cyber-button">
+                            <i class="fas fa-save"></i> SALVAR
+                        </button>
+                        <button type="button" id="cancel-edit" class="cyber-button secondary">
+                            <i class="fas fa-times"></i> CANCELAR
+                        </button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="characters-list">
+                <h2><i class="fas fa-users"></i> PERSONAGENS CRIADOS</h2>
+                <div class="divider"></div>
+                
+                <div id="characters-grid" class="grid-container">
+                    <!-- Personagens serão carregados aqui via JavaScript -->
+                    <div class="empty-state">
+                        <i class="fas fa-user-slash"></i>
+                        <p>NENHUM PERSONAGEM CRIADO</p>
+                        <small>Clique em "Novo Personagem" para começar</small>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="cyber-footer">
+            <p>© 2023 Ordem Paranormal RPG | Sistema não-oficial</p>
+        </footer>
+    </div>
+
+    <script src="personagens.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+/* === ESTILOS PARA PÁGINA DE DADOS === */
+
+/* Seção de dados */
+.dice-section {
+    background-color: var(--panel-bg);
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.dice-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.dice-btn {
+    background-color: var(--dark-bg);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 15px 10px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.dice-btn:hover {
+    background-color: var(--primary);
+    color: var(--dark-bg);
+    transform: translateY(-3px);
+}
+
+.dice-btn i {
+    font-size: 2rem;
+}
+
+/* Rolagem personalizada */
+.custom-roll-section {
+    background-color: var(--panel-bg);
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.custom-roll-form {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.custom-roll-form input {
+    flex-grow: 1;
+    padding: 12px;
+    background-color: var(--dark-bg);
+    border: 1px solid var(--primary);
+    color: var(--text-light);
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+.roll-examples {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed var(--primary);
+}
+
+.roll-examples code {
+    background-color: rgba(0, 240, 255, 0.1);
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+/* Resultados */
+.results-section {
+    background-color: var(--panel-bg);
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.current-result {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.dice-animation {
+    width: 80px;
+    height: 80px;
+    background-color: var(--dark-bg);
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.result-text {
+    flex-grow: 1;
+}
+
+#current-roll-result {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin: 5px 0;
+}
+
+.history-container {
+    border-top: 1px solid var(--primary);
+    padding-top: 20px;
+}
+
+.history-list {
+    max-height: 300px;
+    overflow-y: auto;
+    margin: 15px 0;
+    padding-right: 10px;
+}
+
+.history-item {
+    background-color: var(--dark-bg);
+    border-left: 3px solid var(--primary);
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.history-item .roll {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.history-item .result {
+    font-weight: bold;
+}
+
+.empty-history {
+    text-align: center;
+    padding: 30px 0;
+    color: var(--primary);
+    opacity: 0.5;
+}
+
+.empty-history i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Animação de rolagem */
+@keyframes dice-roll {
+    0% { transform: rotate(0deg) scale(1); }
+    25% { transform: rotate(90deg) scale(1.1); }
+    50% { transform: rotate(180deg) scale(1); }
+    75% { transform: rotate(270deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+.rolling {
+    animation: dice-roll 0.5s linear infinite;
+}
